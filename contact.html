@@ -68,69 +68,43 @@
       </header>
       <!-- End header -->
       <!-- section -->
-      <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+        <div class="fcf-body">
 
-      * {
-        box-sizing: border-box;
-      }
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
 
-      /* Style inputs */
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
-
-      input[type=submit] {
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
-      @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-      </style>
-
-      <body>
-        <div class="container">
-          <div style="text-align:center">
-            <h2 style="strong">Contact Us</h2>
-            <p>Swing by for a cup of coffee, or leave us a message:</p>
-          </div>
-          <div class="row">
-            <div class="column">
-              <img src="https://www.salvationarmy.org.au/scribe/sites/longjetty/files/Webpage_Pics/Contact-us.jpg" style="width:95%">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
             </div>
-            <div class="column">
-              <form action="/form-process.php">
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname">Email</label>
-                <input type="email" id="lname" name="Email" placeholder="Your email address..">
-                <label for="lname">Phone Number</label>
-                <input type="number" id="lname" name="phone number" placeholder="Your phone number..">
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                <input type="submit" value="Submit">
-              </form>
-            </div>
-          </div>
         </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+
+    </form>
+    </div>
+
+</div>
         <!-- end section -->
         <!-- Start Footer -->
         <footer class="footer-box">
