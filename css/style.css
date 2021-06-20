@@ -1082,8 +1082,6 @@ ul.top_icon li a {
      text-transform: uppercase;
 }
 
-
-}
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1161,7 +1159,8 @@ ul.top_icon li a {
 .main-menu ul>li a:hover {
      color: #fff;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child (6) 
+{
      padding-right: 0px;
 }
 .nav>li {
@@ -1177,7 +1176,7 @@ ul.top_icon li a {
      right: 0;
      padding: 15px 0px;
 }
-.sub-full {}
+
 .simple-down {
      padding: 15px;
 }
@@ -2336,19 +2335,10 @@ line-height: 30px;
      padding-bottom: 100px;
      background-size: cover;
 }
-
-.soc_text{
-     width: 100%;
-     float: left;
-     background-color: #081b30;
-     height: auto;
-     padding-top: 71px;
-     padding-bottom: 72px;
-     text-align: center;
-     font-family: apple;
-     font-size: 180px;
-     color: #fff;
+.col-md-6{
+    margin: auto;
 }
+
 
 .email_btn {
     width: 100%;
@@ -2357,6 +2347,7 @@ line-height: 30px;
     background-image: url(../images/boll_bg.png);
     height: auto;
     padding: 41px;
+    
 }
 
 .form-group {
